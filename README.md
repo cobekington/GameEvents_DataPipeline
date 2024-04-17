@@ -1,10 +1,17 @@
-** Real-Time Leaderboard**
+**Simplified Data Pipeline**
 
 - **Tech Stack:**
-    - Python (Flask or similar for a basic web backend)
-    - Redis (or an in-memory database) for fast leaderboard storage and updates
-    - WebSocket library (e.g., Socket.IO) for real-time communication
-    - A simple frontend (JavaScript/HTML/CSS)
+    - Python
+    - Kafka or a simpler message queue alternative (e.g., RabbitMQ)
+    - A small database (SQLite or PostgreSQL)
+    - Consider introducing Spark or a simple data processing library (pandas)
 - **Concept:**
-    - Simulate game score submissions from multiple "players."
-    - Maintain a leaderboard that updates in real-time as scores come in.
+    - Simulate a stream of game events (e.g., player actions, match results).
+    - Build a pipeline that processes these events:
+        - Simple calculations (aggregations, win/loss ratios)
+        - Stores the results in a database.
+    - Consider a basic visualization element (charts using a suitable library)
+- **Demonstrates:**
+    - Building data processing and streaming concepts
+    - Understanding of data transformation
+    - Interest in analytics extraction
