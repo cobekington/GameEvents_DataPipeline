@@ -1,0 +1,54 @@
+[
+    {
+        "eventType": "player_join",
+        "fields": [
+            { "name": "timestamp", "type": "string" },
+            { "name": "player_id", "type": "integer" },
+            { "name": "player_level", "type": "integer" },
+            { "name": "game_mode", "type": "string" },
+            { "name": "skill_rating", "type": "number" },
+            { "name": "region", "type": "string" },
+            { "name": "team", "type": "string" } 
+        ]
+    },
+    {
+        "eventType": "match_start",
+        "fields": [
+            { "name": "timestamp", "type": "string" },
+            { "name": "match_id", "type": "integer" }, 
+            { "name": "map_name", "type": "string" },
+            { "name": "game_mode", "type": "string" },
+            { "name": "player_count", "type": "integer" } 
+        ]
+    },
+    {
+        "eventType": "match_end",
+        "fields": [
+            { "name": "timestamp", "type": "string" },
+            { "name": "match_id", "type": "integer" },
+            { "name": "winning_team", "type": "string" },
+            { "name": "match_duration", "type": "number" }, 
+            { "name": "player_scores", "type": "array" } 
+        ]
+    },
+    {
+        "eventType": "player_kill",
+        "fields": [
+            { "name": "timestamp", "type": "string" },
+            { "name": "killer_id", "type": "integer" },
+            { "name": "victim_id", "type": "integer" },
+            { "name": "weapon_used", "type": "string" },
+            { "name": "headshot", "type": "boolean" },
+            { "name": "distance", "type": "number" }
+        ]
+    },
+    {
+        "eventType": "item_pickup",
+        "fields": [
+            { "name": "timestamp", "type": "string" },
+            { "name": "player_id", "type": "integer" },
+            { "name": "item_name", "type": "string" },
+            { "name": "player_health", "type": "number" }
+        ]
+    }
+]
