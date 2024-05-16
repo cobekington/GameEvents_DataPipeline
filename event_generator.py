@@ -176,7 +176,7 @@ def generate_item_pickup_event
     event[field['name']] = random.uniform(event['player_health'] + health_gain, event['player_health'] + health_gain + 10)  # Slight Variation
     return event
 
-# ----------------- Helper Functions -----------------
+# ----------------- Helper Functions ------------------
 
 def remove_inactive_players():
     """Removes players from active_players if they exceed the inactivity threshold."""
